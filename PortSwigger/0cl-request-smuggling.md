@@ -8,6 +8,8 @@
   - 0.CL mismatch between front-end and back-end.
   - Smuggle an XSS payload in a request that eventually gets served to Carlos.
 
+> **Note:** This walkthrough assumes a basic understanding of **gadgets** in the context of HTTP desync attacks. For a deeper explanation and analysis of what a gadget is (especially **early-response gadgets** like the static resources used in this lab) and why they’re key to making 0.CL work, see the [**“What is a gadget here?”**](https://github.com/0x71pp17/Lab_Journal/blob/main/PortSwigger/Gagets4Desync.md) writeup. Reading that either before or alongside the lab steps greatly helps in understanding *why* this exploit works, not just *how* to run it.
+
 ---
 
 ## Step 1 – Capture baseline requests and discover a static gadget
