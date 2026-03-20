@@ -1,5 +1,7 @@
-# Lab_Journal
-A personal record of validated solution walkthroughs in web application security labs.
+# Security Lab Journal
+A step-by-step account of activities and validated solutions in web application security labs. 
+
+This repository serves as a structured and reflective record of hands-on exploration, tracking techniques and validated exploits in controlled environments for web application security testing.
 
 ## PortSwigger
 
