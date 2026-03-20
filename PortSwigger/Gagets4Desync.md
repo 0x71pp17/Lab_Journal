@@ -60,9 +60,9 @@ Because the **frontend** and **backend** disagree about `Content-Length` (0 vs N
 
 So in this lab, when it's said:
 
-> “Use `/resources/labheader/js/labHeader.js` (or `/resources/css/anything`) as a gadget,”
+> “Use `/resources/labheader/js/labHeader.js` as a gadget,”
 
-it means:
+this means:
 
 - It’s a **safe, predictable static endpoint** that can be abused in **Stage 1** of the double-desync.
 - Sending a POST with a misleading `Content-Length` to this path is what puts the front-end/back-end connection into the precise state needed to turn 0.CL into a controllable desync.
