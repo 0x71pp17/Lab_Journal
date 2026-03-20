@@ -48,7 +48,7 @@
 This is the request you’ll send to Turbo Intruder as the seed.
 
 1. In **Proxy → HTTP history**, right-click the `GET /` request → **Send to Repeater**.
-2. In Repeater, tidy the request to something simple:
+2. In Repeater, modify the request to something simple like:
 
    ```http
    GET / HTTP/1.1
