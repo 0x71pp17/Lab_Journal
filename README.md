@@ -1,5 +1,5 @@
 # Lab_Journal
-Validated solution walkthroughs — web application security labs
+A personal record of validated solution walkthroughs in web application security labs.
 
 ## PortSwigger
 
