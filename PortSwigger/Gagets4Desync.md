@@ -64,7 +64,7 @@ So in this lab, when it's said:
 
 this means:
 
-- It’s a **safe, predictable static endpoint** that can be abused in **Stage 1** of the double-desync.
+- It’s a **predictable static endpoint** that can be abused in **Stage 1** of the double-desync.
 - Sending a POST with a misleading `Content-Length` to this path is what puts the front-end/back-end connection into the precise state needed to turn 0.CL into a controllable desync.
 
 ---
